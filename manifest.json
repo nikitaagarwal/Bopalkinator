@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Bopalkinator",
+    "description": "THAT'S OUR PM",
+    "version": "6.9",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
